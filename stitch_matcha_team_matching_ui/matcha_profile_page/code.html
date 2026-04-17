@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#afd190",
+                        "on-surface": "#1b1c18",
+                        "on-primary-fixed-variant": "#334e1b",
+                        "tertiary-container": "#b7553f",
+                        "surface-bright": "#fbf9f3",
+                        "outline": "#74796c",
+                        "inverse-on-surface": "#f3f1eb",
+                        "background": "#fbf9f3",
+                        "surface-container-high": "#eae8e2",
+                        "primary-fixed": "#cbedaa",
+                        "on-primary-container": "#edffd8",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary-fixed-variant": "#7e2b19",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3d4b31",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c18",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d8e8c5",
+                        "on-primary-fixed": "#0c2000",
+                        "surface-container-low": "#f5f3ed",
+                        "tertiary-fixed-dim": "#ffb4a4",
+                        "surface-tint": "#4a6631",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#3e0500",
+                        "tertiary-fixed": "#ffdad3",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#f0eee8",
+                        "primary-fixed-dim": "#afd190",
+                        "outline-variant": "#c4c8ba",
+                        "tertiary": "#983d2a",
+                        "primary-container": "#5d7b43",
+                        "on-tertiary-container": "#fff7f6",
+                        "on-surface-variant": "#44483d",
+                        "secondary": "#556348",
+                        "surface-dim": "#dcdad4",
+                        "on-secondary-fixed": "#131f09",
+                        "secondary-fixed-dim": "#bcccaa",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-container": "#d8e8c5",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#5b694d",
+                        "error-container": "#ffdad6",
+                        "surface": "#fbf9f3",
+                        "primary": "#45622d",
+                        "inverse-surface": "#30312d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f3;
+            color: #1b1c18;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-[#fbf9f3]/80 dark:bg-[#1b1c18]/80 backdrop-blur-md sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#45622d] dark:text-[#5d7b43] tracking-tighter">MATCHA</span>
+<nav class="hidden md:flex gap-6 font-['Manrope'] font-bold tracking-tight">
+<a class="text-[#556348] dark:text-[#a4ad9a] hover:text-[#983d2a] transition-colors duration-300" href="#">Dashboard</a>
+<a class="text-[#556348] dark:text-[#a4ad9a] hover:text-[#983d2a] transition-colors duration-300" href="#">Projects</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#45622d] scale-95 active:scale-90 transition-transform">notifications</button>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container">
+<img alt="User profile" data-alt="Close up portrait of a professional male software engineer with short dark hair and a friendly expression, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvKQuDBBw2qDbPxyvpVsb07U5UslQNSPs0NMpMrd2prKB2jfiDITuXqrX0PKgb0oD1iZPRe0AdD8GK0G7yf0ddZDD4ER-tofmXg-_wagoKaAPSMNgI4G5bSYlitq4FN9b5K5f3MJDvMYkVG129AedN02X3j43X8xuw-GrlYP2pwkoI0RHIj6rwZ9APGtlS143U-FXyzpFSzM7TOf50W0qMsbuk-crUS_GLSXnE8MYzYhaP3G8PqsqAqGBz8K0Y2OPADBlc17oRliE"/>
+</div>
+</div>
+</div>
+<div class="bg-[#f0eee8] dark:bg-[#2a2b24] h-[1px] w-full"></div>
+</header>
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="bg-[#f5f3ed] dark:bg-[#23241f] h-screen w-64 fixed left-0 top-0 hidden lg:flex flex-col shadow-[0_20px_40px_rgba(69,98,45,0.06)] pt-20">
+<div class="flex flex-col p-6 gap-2">
+<div class="flex items-center gap-3 mb-8 px-2">
+<div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div>
+<p class="font-['Manrope'] font-bold text-[#45622d]">The Atelier</p>
+<p class="text-xs text-on-secondary-container">Curated Talent</p>
+</div>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] dark:text-[#a4ad9a] hover:bg-[#eae8e2] dark:hover:bg-[#2d2e28] transition-all rounded-lg font-['Inter'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">dashboard</span> Dashboard
+                    </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] dark:text-[#a4ad9a] hover:bg-[#eae8e2] dark:hover:bg-[#2d2e28] transition-all rounded-lg font-['Inter'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">folder_open</span> Projects
+                    </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] dark:text-[#a4ad9a] hover:bg-[#eae8e2] dark:hover:bg-[#2d2e28] transition-all rounded-lg font-['Inter'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">auto_awesome</span> Matching
+                    </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] dark:text-[#a4ad9a] hover:bg-[#eae8e2] dark:hover:bg-[#2d2e28] transition-all rounded-lg font-['Inter'] text-sm font-medium" href="#">
+<span class="material-symbols-outlined">group</span> Connections
+                    </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-[#eae8e2] dark:bg-[#2d2e28] text-[#45622d] dark:text-[#5d7b43] font-bold rounded-lg font-['Inter'] text-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span> Profile
+                    </a>
+</nav>
+<div class="mt-auto pt-6">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-xl shadow-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">search</span>
+                        Find a Match
+                    </button>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:ml-64 flex-1 p-8 md:p-12">
+<div class="max-w-4xl mx-auto space-y-10">
+<!-- Profile Header -->
+<section class="flex flex-col md:flex-row items-center md:items-end gap-8 bg-surface-container-low p-10 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-20 -mt-20"></div>
+<div class="relative group">
+<div class="w-40 h-40 rounded-full border-4 border-surface overflow-hidden shadow-lg">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="High-resolution portrait of a smiling young professional man with light beard and glasses, warm natural lighting against a minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsyMuQOt-m2SqbcBsb41F2hMJA5tpBlcJRgrMYcpAO3EjCSrbIe0ht6qdxhXBCKs0D-dYEzgWBfk3jsA217jIbJjm7Enf8Kqjva8TzC37oxzrhaBe3BR3Q7p8UTokKUsxKYxm_7V4qz0hvZuvCwukxQvFAl1rFrRdRqoKCiCWmhn0b2P5q4ed7-ervORMbVxIeDionV-lL0uDA1ECO0hk6xtoYe2MSXfE7KXIzrMzwe7_GDEdAaM9EzGKawQpOuKpXnl3N32SuyAY"/>
+</div>
+<button class="absolute bottom-1 right-1 bg-surface text-primary p-2 rounded-full shadow-md hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</button>
+</div>
+<div class="flex-1 text-center md:text-left space-y-2">
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface">Alex Chen</h1>
+<p class="text-secondary font-medium">Full Stack Developer • San Francisco, CA</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+<button class="px-6 py-2.5 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-lg font-bold text-sm flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-sm">edit</span>
+                                Edit Profile
+                            </button>
+<button class="px-6 py-2.5 bg-surface text-primary border border-primary/10 rounded-lg font-bold text-sm hover:bg-primary/5 transition-colors">
+                                View Public Profile
+                            </button>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Left Column: Bio & Core Info -->
+<div class="md:col-span-2 space-y-8">
+<!-- Bio Section -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(69,98,45,0.06)] border border-outline-variant/10">
+<h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history_edu</span>
+                                About Me
+                            </h2>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 text-on-surface-variant text-sm leading-relaxed focus:ring-2 focus:ring-primary/20 min-h-[120px]" placeholder="Tell the world about your creative journey...">Passionate developer with 5+ years of experience building scalable web applications. I love bridging the gap between design and technology, creating intuitive interfaces that solve complex user needs. Currently exploring the intersection of AI and human-centered design.</textarea>
+</div>
+<!-- Skills & Interests -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(69,98,45,0.06)] border border-outline-variant/10">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">psychology</span>
+                                    Skills &amp; Expertise
+                                </h2>
+<button class="text-sm text-primary font-bold hover:underline">Add New</button>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                                    Python <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                                    React <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                                    AI <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                                    Design <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                                    Node.js <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                                    TypeScript <span class="material-symbols-outlined text-xs">close</span>
+</span>
+<button class="border-2 border-dashed border-outline-variant text-outline px-4 py-2 rounded-full text-sm font-medium hover:bg-surface-container-low transition-colors">
+                                    + Add Interest
+                                </button>
+</div>
+</div>
+<!-- GitHub Link -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_20px_40px_rgba(69,98,45,0.06)] border border-outline-variant/10">
+<h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">link</span>
+                                Portfolio &amp; Links
+                            </h2>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">terminal</span>
+<input class="w-full bg-surface-container-low border-none rounded-lg py-3 pl-12 pr-4 text-on-surface-variant text-sm focus:ring-2 focus:ring-primary/20" type="text" value="github.com/alexchen_dev"/>
+</div>
+</div>
+</div>
+<!-- Right Column: Settings & Selection -->
+<div class="space-y-8">
+<!-- Availability -->
+<div class="bg-surface-container-low p-8 rounded-xl space-y-6">
+<div>
+<h3 class="font-bold text-sm uppercase tracking-wider text-secondary mb-4">Availability</h3>
+<div class="flex justify-between items-center mb-2">
+<span class="text-2xl font-black text-primary">10-15</span>
+<span class="text-xs font-bold text-on-secondary-container px-2 py-1 bg-secondary-fixed rounded">hours/week</span>
+</div>
+<input class="w-full h-2 bg-outline-variant rounded-lg appearance-none cursor-pointer accent-primary" max="40" min="0" type="range" value="15"/>
+</div>
+<hr class="border-outline-variant/30"/>
+<div>
+<h3 class="font-bold text-sm uppercase tracking-wider text-secondary mb-4">Experience Level</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="text-primary focus:ring-primary" name="exp" type="radio"/>
+<span class="text-sm font-medium text-on-surface-variant group-hover:text-primary transition-colors">Entry Level</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="text-primary focus:ring-primary" name="exp" type="radio"/>
+<span class="text-sm font-bold text-primary transition-colors">Intermediate</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="text-primary focus:ring-primary" name="exp" type="radio"/>
+<span class="text-sm font-medium text-on-surface-variant group-hover:text-primary transition-colors">Senior / Expert</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Preferred Roles -->
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="font-bold text-sm uppercase tracking-wider text-secondary mb-4">Preferred Roles</h3>
+<div class="space-y-3">
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/10 cursor-pointer hover:border-primary/50 transition-all">
+<span class="text-sm font-semibold">Frontend</span>
+<input checked="" class="rounded text-primary focus:ring-primary" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/10 cursor-pointer hover:border-primary/50 transition-all">
+<span class="text-sm font-semibold">Machine Learning</span>
+<input checked="" class="rounded text-primary focus:ring-primary" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/10 cursor-pointer hover:border-primary/50 transition-all">
+<span class="text-sm font-semibold">Full Stack</span>
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/10 cursor-pointer hover:border-primary/50 transition-all">
+<span class="text-sm font-semibold">UI/UX Design</span>
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- CTA Area -->
+<div class="p-8 bg-tertiary-container text-on-tertiary-container rounded-xl text-center space-y-4 shadow-xl">
+<p class="text-sm font-bold opacity-90">Ready to build something?</p>
+<button class="w-full py-3 bg-on-tertiary-container text-tertiary-container rounded-lg font-black tracking-tight hover:scale-105 transition-transform">
+                                MATCH ME NOW
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Connections | MATCHA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#afd190",
+                        "on-surface": "#1b1c18",
+                        "on-primary-fixed-variant": "#334e1b",
+                        "tertiary-container": "#b7553f",
+                        "surface-bright": "#fbf9f3",
+                        "outline": "#74796c",
+                        "inverse-on-surface": "#f3f1eb",
+                        "background": "#fbf9f3",
+                        "surface-container-high": "#eae8e2",
+                        "primary-fixed": "#cbedaa",
+                        "on-primary-container": "#edffd8",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary-fixed-variant": "#7e2b19",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3d4b31",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c18",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d8e8c5",
+                        "on-primary-fixed": "#0c2000",
+                        "surface-container-low": "#f5f3ed",
+                        "tertiary-fixed-dim": "#ffb4a4",
+                        "surface-tint": "#4a6631",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#3e0500",
+                        "tertiary-fixed": "#ffdad3",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#f0eee8",
+                        "primary-fixed-dim": "#afd190",
+                        "outline-variant": "#c4c8ba",
+                        "tertiary": "#983d2a",
+                        "primary-container": "#5d7b43",
+                        "on-tertiary-container": "#fff7f6",
+                        "on-surface-variant": "#44483d",
+                        "secondary": "#556348",
+                        "surface-dim": "#dcdad4",
+                        "on-secondary-fixed": "#131f09",
+                        "secondary-fixed-dim": "#bcccaa",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-container": "#d8e8c5",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#5b694d",
+                        "error-container": "#ffdad6",
+                        "surface": "#fbf9f3",
+                        "primary": "#45622d",
+                        "inverse-surface": "#30312d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fbf9f3; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- SideNavBar (Desktop) -->
+<aside class="h-screen w-64 fixed left-0 top-0 hidden lg:flex flex-col bg-[#f5f3ed] dark:bg-[#23241f] shadow-[0_20px_40px_rgba(69,98,45,0.06)] z-40">
+<div class="flex flex-col p-6 gap-2 h-full">
+<div class="flex items-center gap-3 mb-8 px-2">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined">local_drink</span>
+</div>
+<div>
+<h1 class="font-headline font-bold text-[#45622d] leading-none">The Atelier</h1>
+<span class="text-xs text-secondary font-medium">Curated Talent</span>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] hover:bg-[#eae8e2] transition-all rounded-lg font-medium text-sm" href="#">
+<span class="material-symbols-outlined">dashboard</span> Dashboard
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] hover:bg-[#eae8e2] transition-all rounded-lg font-medium text-sm" href="#">
+<span class="material-symbols-outlined">folder_open</span> Projects
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] hover:bg-[#eae8e2] transition-all rounded-lg font-medium text-sm" href="#">
+<span class="material-symbols-outlined">auto_awesome</span> Matching
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-[#eae8e2] text-[#45622d] font-bold rounded-lg text-sm" href="#">
+<span class="material-symbols-outlined">group</span> Connections
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 text-[#556348] hover:bg-[#eae8e2] transition-all rounded-lg font-medium text-sm" href="#">
+<span class="material-symbols-outlined">person</span> Profile
+                </a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-4 px-4 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-xl font-headline font-bold text-sm shadow-md hover:opacity-90 transition-all active:scale-95">
+                    Find a Match
+                </button>
+</div>
+</div>
+</aside>
+<!-- TopNavBar -->
+<header class="bg-[#fbf9f3]/80 dark:bg-[#1b1c18]/80 backdrop-blur-md sticky top-0 z-50 lg:ml-64">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-[#45622d] dark:text-[#5d7b43] tracking-tighter font-headline">MATCHA</span>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-[#556348] hover:text-[#983d2a] transition-colors duration-300 font-headline font-bold text-sm" href="#">Dashboard</a>
+<a class="text-[#556348] hover:text-[#983d2a] transition-colors duration-300 font-headline font-bold text-sm" href="#">Projects</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-secondary hover:text-primary transition-colors scale-95 active:scale-90">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-surface-container-high">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close up portrait of a young professional woman with natural lighting and soft blurred office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEq2uEK1ljTTodoRxHLcVs5hNX5qyFaLaZFKQVAJ8elkz2og65nNLbXUf5R7bidX1EC6u555-tkOZv87OwPOGdYsru9rhPYx9b2TtlhNEjgS-O35lvrb-0de53hQ9jV-dzFrUBzjWXfbKqLMtcbKMU41kwM6IAcOb-iyiHAn0ObJ6I8Z4Mm9i4F3MkIikGhhGZ-3nbGAK6eIMHzk-tS4EFigrzU0Yq_IKwbZRSuZoeBUA22dRDjdlzJ8lZ5gJrh2f1MHdEDdUIbsk"/>
+</div>
+</div>
+</div>
+<div class="bg-[#f0eee8] dark:bg-[#2a2b24] h-[1px] w-full"></div>
+</header>
+<!-- Main Canvas -->
+<main class="lg:ml-64 min-h-screen pb-20">
+<div class="max-w-5xl mx-auto px-8 pt-12">
+<!-- Page Header -->
+<div class="mb-12">
+<h2 class="text-4xl font-headline font-extrabold text-primary tracking-tight mb-2">Connections</h2>
+<p class="text-on-surface-variant font-body max-w-lg">Manage your collaborations and build your creative network in the digital atelier.</p>
+</div>
+<!-- Tab Navigation -->
+<div class="flex gap-8 mb-8 border-b border-outline-variant/20">
+<button class="pb-4 text-[#45622d] border-b-2 border-[#45622d] font-headline font-bold transition-all">
+                    Received Requests
+                    <span class="ml-2 px-2 py-0.5 bg-tertiary-container text-on-tertiary-container text-[10px] rounded-full align-middle">3</span>
+</button>
+<button class="pb-4 text-on-surface-variant hover:text-primary font-headline font-bold transition-all">
+                    Sent Requests
+                </button>
+</div>
+<!-- Content Area: Received Requests (Active View) -->
+<div class="space-y-6">
+<!-- Request Card 1 -->
+<div class="bg-surface-container-low rounded-[2rem] p-6 flex flex-col md:flex-row items-center gap-6 group hover:bg-surface-container transition-colors duration-300">
+<div class="relative">
+<div class="w-24 h-24 rounded-[1.5rem] overflow-hidden rotate-3 group-hover:rotate-0 transition-transform duration-500">
+<img alt="Leo Vance" class="w-full h-full object-cover" data-alt="Professional headshot of a creative male developer with warm studio lighting and a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9J9WZY-EdZAhghO3vvDFQYmnshGI8KNfXgSEFN_0lAO_xEATu0vQ5fjTvmWGt9IUAREbg6KGQMiYtStNLIVadXYcgCQ36sDXiUjXo9CqDBkZQCMuwWXWiOmQwjzS0Bwkrj8f-0MRSyON_-MSYEHho_y88gN76OrBzrRaDgL5CzBr25twFYUd07G0teEzIpFznxpNgxSMI--qkFWDO6NNLvOQXTFSh_DIvwfUG_y6CQLkfm_tfg8GnMBY8s9051RGRI5NR8tu-nCY"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary w-8 h-8 rounded-full border-4 border-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h3 class="text-xl font-headline font-bold text-on-surface mb-1">Leo Vance</h3>
+<p class="text-sm text-secondary font-medium mb-3">Senior Frontend Engineer • 12 Mutuals</p>
+<div class="flex flex-wrap gap-2 justify-center md:justify-start">
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-container text-xs rounded-full font-medium">React</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-container text-xs rounded-full font-medium">TypeScript</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-container text-xs rounded-full font-medium">UI Architecture</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="px-6 py-3 rounded-xl font-headline font-bold text-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-dim transition-colors active:scale-95">
+                            Decline
+                        </button>
+<button class="px-6 py-3 rounded-xl font-headline font-bold text-sm bg-gradient-to-br from-primary to-primary-container text-on-primary hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/10">
+                            Accept
+                        </button>
+</div>
+</div>
+<!-- Request Card 2 -->
+<div class="bg-surface-container-low rounded-[2rem] p-6 flex flex-col md:flex-row items-center gap-6 group hover:bg-surface-container transition-colors duration-300">
+<div class="relative">
+<div class="w-24 h-24 rounded-[1.5rem] overflow-hidden -rotate-2 group-hover:rotate-0 transition-transform duration-500">
+<img alt="Elena Roux" class="w-full h-full object-cover" data-alt="Vibrant portrait of a digital artist with colorful artistic background and soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV3NySTLUlWRq1NOqPRE6ZF3R4up5oQ3o7fJw4y-qXop5c-ptafZfZGh9JESQ0zisn7r06sBWiNH0NW2wygPdJ6j4SoczgN2g1gIOk_FgBcrxkOb43sA5dN5DVo-CBMeVcZmSxIBc8dlDP6DDxVt7QK_2_sBs8JfUIig0F2p1-HkJS3sYlc3qiC2q8DESrWUMCo8ua_3gqK1W8INz5x6dC4u6kvpk7c_-m2-aKqCl2BdWqPYNIggdeCqCNK-usjzC6Ccf1ZlvKkbQ"/>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h3 class="text-xl font-headline font-bold text-on-surface mb-1">Elena Roux</h3>
+<p class="text-sm text-secondary font-medium mb-3">Brand Designer • 5 Mutuals</p>
+<div class="flex flex-wrap gap-2 justify-center md:justify-start">
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-container text-xs rounded-full font-medium">Editorial Design</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-container text-xs rounded-full font-medium">Motion</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="px-6 py-3 rounded-xl font-headline font-bold text-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-dim transition-colors active:scale-95">
+                            Decline
+                        </button>
+<button class="px-6 py-3 rounded-xl font-headline font-bold text-sm bg-gradient-to-br from-primary to-primary-container text-on-primary hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/10">
+                            Accept
+                        </button>
+</div>
+</div>
+<!-- Request Card 3 (Sent Status Example) -->
+<div class="mt-16 mb-8">
+<h4 class="text-lg font-headline font-bold text-secondary mb-6">Recent Activity</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Sent Request (Pending) -->
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-2xl p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Marcus Thorne" class="w-full h-full object-cover" data-alt="Close up portrait of a male designer with minimalist aesthetic and bright high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuTIOhuuXuZ9cqaExJwLy_WM-lxQ1lSv_gIy9ZksvHAiJ9TswafjolPdXRp0fR-Tp48LNQtcz09u5xAgEwc27EqC-zXRrO6hG6LYdjyYH6K7uPaKqSNGDlq4uZc14uyTTDNV_a8x2mK_ZZwyHQd0DjevUZ2xeC8guufeUrde4G2vGWMFGRyDMxs2MfAlRVCaYM9nDzvADyTt1y-ZUN7UX3WPX_IitmDXy6nB5_7U6ERNK0kKDBdkOxoMIZDhQIQOjg3NL5rswq64Q"/>
+</div>
+<div>
+<h5 class="text-sm font-bold font-headline">Marcus Thorne</h5>
+<span class="text-xs text-secondary">Request sent 2 days ago</span>
+</div>
+</div>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-[10px] font-bold uppercase tracking-wider rounded-md">Pending</span>
+</div>
+<!-- Sent Request (Accepted) -->
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-2xl p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Sia Kim" class="w-full h-full object-cover" data-alt="Professional woman looking confidently at camera in an airy office setting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZsjpYnnzw2jCDfVgmd3cBlC3byLxgX3axfCCj3DNFhpyjNOszXaxnDMHlB4MW-oLITrlp6jxBuXwGys_rfJ3rrfNatLiSKf24qZmhRWnUWE_1OhPg6cVlOc-sPDD-Nh2RZDGFE96lMCwYTNi_SXpaXT-f2sAQtaWkGU6z6QQ7bQaKgv3ak51X8G6VtDS-HzD5Q6hZBxzyF5AbulnFEEY2X8xsXUuj9MqbP8DAx4tZuKFvE3LSC8G8l4Ljx1NvmgtW6lXiKBd_uSM"/>
+</div>
+<div>
+<h5 class="text-sm font-bold font-headline">Sia Kim</h5>
+<span class="text-xs text-secondary">Accepted yesterday</span>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider rounded-md">Connected</span>
+<button class="p-2 bg-tertiary/10 text-tertiary rounded-lg hover:bg-tertiary hover:text-white transition-all">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State (Hidden for this mockup, but structured) -->
+<div class="hidden flex-col items-center justify-center py-24 text-center bg-surface-container-lowest rounded-[3rem] border-2 border-dashed border-outline-variant/20">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-outline-variant">person_search</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">No pending requests. Start matching!</h3>
+<p class="text-on-surface-variant max-w-sm mb-8">The best collaborations start with a single match. Head over to the dashboard to find your next teammate.</p>
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-headline font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                        Find a Match
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-[#fbf9f3]/95 backdrop-blur-lg border-t border-outline-variant/10 z-50 flex justify-around items-center py-3 px-6">
+<a class="flex flex-col items-center gap-1 text-[#556348]" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#556348]" href="#">
+<span class="material-symbols-outlined">folder_open</span>
+<span class="text-[10px] font-medium">Projects</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#45622d]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="text-[10px] font-bold">Connect</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[#556348]" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</nav>
+</body></html>
