@@ -1,4 +1,5 @@
 .DS_Store
+._*
 
 # Python
 __pycache__/
